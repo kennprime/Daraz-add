@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Добавить Daraz в свой плейлист!</title>
+    <style>
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px rgba(255, 0, 255, 0.8); }
+            50% { box-shadow: 0 0 20px rgba(255, 0, 255, 1); }
+            100% { box-shadow: 0 0 10px rgba(255, 0, 255, 0.8); }
+        }
+
+        body {
+            background: linear-gradient(135deg, #8a2be2, #ff1493, #ffffff, #00bfff);
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-bottom: 150px;
+            margin-top: 50px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 400px;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(243, 9, 243, 0.8);
+            transition: 0.3s;
+            animation: pulse 2s infinite alternate;
+        }
+
+        .button img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .spotify { background: linear-gradient(90deg, #538b74, #1ed760); color: white; }
+        .soundcloud { background: linear-gradient(90deg, #0e0e0e, #ff774a); color: white; }
+        .zvuk { background: linear-gradient(90deg, #0e0e0e, #a64dff); color: white; }
+        .yandex { background: linear-gradient(90deg, #f7f7f7, #ffdd55); color: black; }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 0, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>𝓓𝓪𝓻𝓪𝔃</h1>
+    <a href="https://open.spotify.com/artist/7KUuNIKMZNia5z6QOZ3nlX?si=WrFWnqHnTRqZOSzCI__v-g" class="button spotify">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify">
+        Spotify
+    </a>
+    <a href="https://soundcloud.com/neizvestnai99991?ref=clipboard&p=i&c=1&si=0A4D8C47674441E2BC57EED5907B0B97&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" class="button soundcloud">
+        <img src="https://store-images.s-microsoft.com/image/apps.22696.14398308773733109.53eed167-276f-443c-a7a5-c0d635242775.283cc376-189e-4777-8a82-29f500a9de4f" alt="SoundCloud">
+        SoundCloud
+    </a>
+    <a href="https://zvuk.com/artist/213220855" class="button zvuk">
+        <img src="logo zvuk.png" alt="Zvuk">
+        Zvuk
+    </a>
+    
+    <a href="https://music.yandex.uz/artist/13586407/tracks" class="button yandex">
+        <img src="https://music.yandex.ru/blocks/meta/i/og-image.png" alt="Яндекс Музыка">
+        Yandex Music
+    </a>
+</body>
+</html>
